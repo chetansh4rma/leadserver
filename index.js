@@ -352,9 +352,9 @@ server.post("/newpass",async (req, res) => {
     });
     await postnew.deleteOne({ _id: post });
   })
+const location=3000;
   server.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
-  server.listen(3005||process.env.BASE_URL, () => {
+  server.listen(location, () => {
     console.log("server started");
   });
 //  this is my server file handle the otp here and setup middleware and  update in the above code without changing existing content
