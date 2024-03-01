@@ -10,7 +10,7 @@ const path = require('path');
 
 const main = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/leadpreneurs');
+    await mongoose.connect('mongodb+srv://chetansharma9878600494:<password>@cluster0.eqcqz8h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
     console.log("db connected");
   } catch (error) {
     console.error(error);
